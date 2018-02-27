@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22259EE17779D30C4E4B4DD8 /* Pods_btcutil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC87B3D89A5089E24DB7BBD /* Pods_btcutil.framework */; };
+		724AD5B0601402C211A00854 /* Pods_btcutilTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F687F0BE3EE613B856BF238 /* Pods_btcutilTests.framework */; };
+		A035FC9C2045EC47001DB028 /* base58Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035FC9B2045EC47001DB028 /* base58Tests.swift */; };
 		A0DF60A02045B085002B8038 /* btcutil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DF60962045B084002B8038 /* btcutil.framework */; };
-		A0DF60A52045B085002B8038 /* btcutilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF60A42045B085002B8038 /* btcutilTests.swift */; };
 		A0DF60A72045B085002B8038 /* btcutil.h in Headers */ = {isa = PBXBuildFile; fileRef = A0DF60992045B084002B8038 /* btcutil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0DF60E62045BAFA002B8038 /* cryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF60E52045BAFA002B8038 /* cryptoTests.swift */; };
+		A0DF60E82045BE5B002B8038 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF60E72045BE5B002B8038 /* String.swift */; };
+		A0DF60EA2045BE66002B8038 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF60E92045BE66002B8038 /* Data.swift */; };
+		A0DF60EC2045C0F4002B8038 /* base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF60EB2045C0F4002B8038 /* base58.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +29,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EC87B3D89A5089E24DB7BBD /* Pods_btcutil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btcutil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		503EC8814C0441BF4B1CFEDF /* Pods-btcutil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcutil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-btcutil/Pods-btcutil.debug.xcconfig"; sourceTree = "<group>"; };
+		8F687F0BE3EE613B856BF238 /* Pods_btcutilTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btcutilTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A035FC9B2045EC47001DB028 /* base58Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = base58Tests.swift; sourceTree = "<group>"; };
 		A0DF60962045B084002B8038 /* btcutil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = btcutil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DF60992045B084002B8038 /* btcutil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = btcutil.h; sourceTree = "<group>"; };
 		A0DF609A2045B084002B8038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DF609F2045B085002B8038 /* btcutilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = btcutilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0DF60A42045B085002B8038 /* btcutilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btcutilTests.swift; sourceTree = "<group>"; };
 		A0DF60A62045B085002B8038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DF60B92045B250002B8038 /* libapple_crypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libapple_crypto.tbd; path = usr/lib/libapple_crypto.tbd; sourceTree = SDKROOT; };
+		A0DF60DE2045B5E0002B8038 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		A0DF60E52045BAFA002B8038 /* cryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoTests.swift; sourceTree = "<group>"; };
+		A0DF60E72045BE5B002B8038 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		A0DF60E92045BE66002B8038 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		A0DF60EB2045C0F4002B8038 /* base58.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = base58.swift; sourceTree = "<group>"; };
+		B1A7FBEFC559BE3F2458D450 /* Pods-btcutilTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcutilTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-btcutilTests/Pods-btcutilTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3DD0EBA41860583E8BC3736 /* Pods-btcutil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcutil.release.xcconfig"; path = "Pods/Target Support Files/Pods-btcutil/Pods-btcutil.release.xcconfig"; sourceTree = "<group>"; };
+		F383EFE5D148C8B4E8D7E0EF /* Pods-btcutilTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcutilTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-btcutilTests/Pods-btcutilTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22259EE17779D30C4E4B4DD8 /* Pods_btcutil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +63,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0DF60A02045B085002B8038 /* btcutil.framework in Frameworks */,
+				724AD5B0601402C211A00854 /* Pods_btcutilTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3856E6DCA828E0C08FC52C67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				503EC8814C0441BF4B1CFEDF /* Pods-btcutil.debug.xcconfig */,
+				E3DD0EBA41860583E8BC3736 /* Pods-btcutil.release.xcconfig */,
+				B1A7FBEFC559BE3F2458D450 /* Pods-btcutilTests.debug.xcconfig */,
+				F383EFE5D148C8B4E8D7E0EF /* Pods-btcutilTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A0DF608C2045B084002B8038 = {
 			isa = PBXGroup;
 			children = (
+				A0DF60DF2045B636002B8038 /* CommonCrypto */,
 				A0DF60982045B084002B8038 /* btcutil */,
 				A0DF60A32045B085002B8038 /* btcutilTests */,
 				A0DF60972045B084002B8038 /* Products */,
+				A0DF60B82045B250002B8038 /* Frameworks */,
+				3856E6DCA828E0C08FC52C67 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				A0DF60992045B084002B8038 /* btcutil.h */,
+				A0DF60EB2045C0F4002B8038 /* base58.swift */,
+				A0DF60E72045BE5B002B8038 /* String.swift */,
+				A0DF60E92045BE66002B8038 /* Data.swift */,
 				A0DF609A2045B084002B8038 /* Info.plist */,
 			);
 			path = btcutil;
@@ -80,10 +117,29 @@
 		A0DF60A32045B085002B8038 /* btcutilTests */ = {
 			isa = PBXGroup;
 			children = (
-				A0DF60A42045B085002B8038 /* btcutilTests.swift */,
+				A0DF60E52045BAFA002B8038 /* cryptoTests.swift */,
+				A035FC9B2045EC47001DB028 /* base58Tests.swift */,
 				A0DF60A62045B085002B8038 /* Info.plist */,
 			);
 			path = btcutilTests;
+			sourceTree = "<group>";
+		};
+		A0DF60B82045B250002B8038 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0DF60B92045B250002B8038 /* libapple_crypto.tbd */,
+				0EC87B3D89A5089E24DB7BBD /* Pods_btcutil.framework */,
+				8F687F0BE3EE613B856BF238 /* Pods_btcutilTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0DF60DF2045B636002B8038 /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				A0DF60DE2045B5E0002B8038 /* module.modulemap */,
+			);
+			path = CommonCrypto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0DF60AA2045B085002B8038 /* Build configuration list for PBXNativeTarget "btcutil" */;
 			buildPhases = (
+				8F0DCB18F1DFD8865FC63D42 /* [CP] Check Pods Manifest.lock */,
 				A0DF60912045B084002B8038 /* Sources */,
 				A0DF60922045B084002B8038 /* Frameworks */,
 				A0DF60932045B084002B8038 /* Headers */,
 				A0DF60942045B084002B8038 /* Resources */,
+				B1E77846159458EB0DC55714 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0DF60AD2045B085002B8038 /* Build configuration list for PBXNativeTarget "btcutilTests" */;
 			buildPhases = (
+				A503B0315DA5A1CB57651175 /* [CP] Check Pods Manifest.lock */,
 				A0DF609B2045B085002B8038 /* Sources */,
 				A0DF609C2045B085002B8038 /* Frameworks */,
 				A0DF609D2045B085002B8038 /* Resources */,
+				89245D9EDF79D1FF49EEA318 /* [CP] Embed Pods Frameworks */,
+				B161AA3EAB6966723ED2F094 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +209,7 @@
 				TargetAttributes = {
 					A0DF60952045B084002B8038 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					A0DF609E2045B085002B8038 = {
@@ -191,11 +253,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		89245D9EDF79D1FF49EEA318 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-btcutilTests/Pods-btcutilTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-btcutilTests/Pods-btcutilTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F0DCB18F1DFD8865FC63D42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-btcutil-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A503B0315DA5A1CB57651175 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-btcutilTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B161AA3EAB6966723ED2F094 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-btcutilTests/Pods-btcutilTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1E77846159458EB0DC55714 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-btcutil/Pods-btcutil-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0DF60912045B084002B8038 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DF60E82045BE5B002B8038 /* String.swift in Sources */,
+				A0DF60EA2045BE66002B8038 /* Data.swift in Sources */,
+				A0DF60EC2045C0F4002B8038 /* base58.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +357,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0DF60A52045B085002B8038 /* btcutilTests.swift in Sources */,
+				A0DF60E62045BAFA002B8038 /* cryptoTests.swift in Sources */,
+				A035FC9C2045EC47001DB028 /* base58Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,11 +422,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/CommonCrypto";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/CommonCrypto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -321,9 +478,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/CommonCrypto";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/CommonCrypto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -333,7 +492,9 @@
 		};
 		A0DF60AB2045B085002B8038 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 503EC8814C0441BF4B1CFEDF /* Pods-btcutil.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +507,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.justuskandzi.btcutil;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -353,7 +515,9 @@
 		};
 		A0DF60AC2045B085002B8038 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3DD0EBA41860583E8BC3736 /* Pods-btcutil.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -373,7 +537,9 @@
 		};
 		A0DF60AE2045B085002B8038 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A7FBEFC559BE3F2458D450 /* Pods-btcutilTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = btcutilTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -386,7 +552,9 @@
 		};
 		A0DF60AF2045B085002B8038 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F383EFE5D148C8B4E8D7E0EF /* Pods-btcutilTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = btcutilTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
