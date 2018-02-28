@@ -1,8 +1,9 @@
 # btcutil
 
-* Sha256
 * Base58
 * Bech32
+* Bolt11
+* Sha256
 
 ## Author
 
