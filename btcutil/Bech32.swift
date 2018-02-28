@@ -55,9 +55,9 @@ enum Bech32 {
             if code < 33 || code > 126 {
                 return nil
             } else if code >= 97 && code <= 122 {
-                hasLower = true;
+                hasLower = true
             } else if code >= 65 && code <= 90 {
-                hasUpper = true;
+                hasUpper = true
             }
         }
         
@@ -127,8 +127,7 @@ enum SegwitAddress {
         if dec.humanReadablePart != hrp || dec.data.count < 1 || dec.data[0] > 16 {
             return nil
         }
-        let data = dec.data.advanced(by: 1)
-        guard let res = convertBits(data: data, fromBits: 5, toBits: 8, pad: false) else {
+        guard let res = convertBits(data: dec.data.advanced(by: 1), fromBits: 5, toBits: 8, pad: false) else {
             return nil
         }
         if res.count < 2 || res.count > 40 {
