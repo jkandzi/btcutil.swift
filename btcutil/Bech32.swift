@@ -45,7 +45,7 @@ enum Bech32 {
         return polymod(values: expandHumanReadablePart(humanReadablePart) + data) == 1
     }
     
-    static func decode(_ bechString: String) -> (humanReadablePart: String, data: Data)? {
+    static func decode(_ bechString: String, limit: Bool = true) -> (humanReadablePart: String, data: Data)? {
         guard let stringBytes = bechString.data(using: .utf8) else { return nil }
         var hasLower = false
         var hasUpper = false
@@ -68,7 +68,7 @@ enum Bech32 {
         let bechString = bechString.lowercased()
         guard let pos = bechString.lastIndex(of: "1") else { return nil }
         
-        if pos < 1 || pos + 7 > bechString.count || bechString.count > 90 {
+        if pos < 1 || pos + 7 > bechString.count || (limit && bechString.count > 90)  {
             return nil
         }
         
