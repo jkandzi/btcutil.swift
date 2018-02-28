@@ -1,5 +1,9 @@
 # btcutil
 
+* Sha256
+* Base58
+* Bech32
+
 ## Author
 
 Justus Kandzi, justus.kandzi@gmail.com
