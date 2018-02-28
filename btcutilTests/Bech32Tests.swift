@@ -47,6 +47,10 @@ class Bech32Tests: XCTestCase {
         }
     }
     
+    func segwitScriptPubKey(version: Int, program: Data) -> Data {
+        return [version > 0 ? UInt8(version) + 0x50 : UInt8(), UInt8(program.count)] + program
+    }
+    
     func testValidSegwitAddresses() {
         let valid: [(String, String)] = [
             ("BC1QW508D6QEJXTDG4Y5R3ZARVARY0C5XW7KV8F3T4", "0014751e76e8199196d454941c45d1b3a323f1433bd6"),
@@ -60,9 +64,12 @@ class Bech32Tests: XCTestCase {
         for (input, output) in valid {
             let decoded = Bech32.decode(input)
             XCTAssertNotNil(decoded)
-            if let (humanReadablePart, _) = decoded {
-                let res = SegwitAddress.decode(hrp: humanReadablePart, addr: input)
-                XCTAssertEqual(res?.program.hexString(), output)
+            if let (humanReadablePart, _) = decoded,
+                let res = SegwitAddress.decode(hrp: humanReadablePart, addr: input) {
+                let address = segwitScriptPubKey(version: res.version, program: res.program)
+                XCTAssertEqual(address.hexString(), output)
+            } else {
+                XCTFail("Should not be nil")
             }
         }
     }
