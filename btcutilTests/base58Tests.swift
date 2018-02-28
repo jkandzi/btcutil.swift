@@ -1,5 +1,4 @@
 //
-//  base58Tests.swift
 //  btcutilTests
 //
 //  Created by Justus Kandzi on 27.02.18.
@@ -10,15 +9,48 @@ import XCTest
 @testable import btcutil
 
 class base58Tests: XCTestCase {
-    func testBase58() {
-        let data = Base58.decode("StV1DL6CwTryKyV")
-        XCTAssertNotNil(data)
-        XCTAssertEqual(String(data: data!, encoding: .utf8), "hello world")
+    func testValidBase58() {
+        let valid: [(String, String)] = [
+            ("StV1DL6CwTryKyV", "hello world"),
+            ("11StV1DL6CwTryKyV", "\0\0hello world"),
+            ("", ""),
+            ("Z", " "),
+            ("n", "-"),
+            ("q", "0"),
+            ("r", "1"),
+            ("4SU", "-1"),
+            ("4k8", "11"),
+            ("ZiCa", "abc"),
+            ("3mJr7AoUXx2Wqd", "1234598760"),
+            ("3yxU3u1igY8WkgtjK92fbJQCd4BZiiT1v25f", "abcdefghijklmnopqrstuvwxyz"),
+            ("3sN2THZeE9Eh9eYrwkvZqNstbHGvrxSAM7gXUXvyFQP8XvQLUqNCS27icwUeDT7ckHm4FUHM2mTVh1vbLmk7y", "00000000000000000000000000000000000000000000000000000000000000")
+        ]
+        
+        for (base58, output) in valid {
+            let data = Base58.decode(base58)
+            XCTAssertNotNil(data)
+            if let data = data {
+                XCTAssertEqual(String(data: data, encoding: .utf8), output)
+            }
+        }
     }
     
-    func testBase58WithLeadingZeros() {
-        let data = Base58.decode("11StV1DL6CwTryKyV")
-        XCTAssertNotNil(data)
-        XCTAssertEqual(String(data: data!, encoding: .utf8), "\0\0hello world")
+    func testInvalidBase58() {
+        let invalid = [
+            "0",
+            "O",
+            "I",
+            "l",
+            "3mJr0",
+            "O3yxU",
+            "3sNI",
+            "4kl8",
+            "0OIl",
+            "!@#$%^&*()-_=+~`"]
+        
+        for base58 in invalid {
+            let data = Base58.decode(base58)
+            XCTAssertNil(data)
+        }
     }
 }

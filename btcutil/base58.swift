@@ -9,7 +9,7 @@
 import Foundation
 import BigInt
 
-class Base58 {
+enum Base58 {
     private static let alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
     
     static func decode(_ input: String) -> Data? {
@@ -31,17 +31,25 @@ class Base58 {
     }
 }
 
-/*
-public func isValidAddress(_ address: String) -> Bool {
-    guard
-        address.count >= 26 && address.count <= 35,
-        let decoded = Base58.decode(address)
-        else { return false }
+enum Base58Check {
+    private static func checksum(_ input: Data) -> [UInt8] {
+        return Array(input.sha256().sha256().bytes.prefix(4))
+    }
+    
+    static func checkDecode(_ input: String) -> (version: Int, payload: Data)? {
+        guard
+            let decoded = Base58.decode(input),
+            decoded.count >= 5
+            else { return nil }
+        
+        let bytes = decoded.bytes
+        let checksum = bytes.suffix(4)
+        let testData = bytes.prefix(bytes.count - 4)
+        
+        if Array(checksum) != Base58Check.checksum(Data(testData)) {
+            return nil
+        }
 
-    let hash = decoded.sha256()
-    
-    print(hash)
-    
-    return true
+        return (version: Int(decoded[0]), payload: Data(testData.suffix(from: 1)))
+    }
 }
-*/
