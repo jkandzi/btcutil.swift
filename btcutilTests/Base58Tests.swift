@@ -8,7 +8,7 @@
 import XCTest
 @testable import btcutil
 
-class base58Tests: XCTestCase {
+class Base58Tests: XCTestCase {
     func testValidBase58() {
         let valid: [(String, String)] = [
             ("StV1DL6CwTryKyV", "hello world"),

@@ -1,5 +1,4 @@
 //
-//  address.swift
 //  btcutil
 //
 //  Created by Justus Kandzi on 28.02.18.

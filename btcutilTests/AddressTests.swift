@@ -1,5 +1,4 @@
 //
-//  addressTests.swift
 //  btcutilTests
 //
 //  Created by Justus Kandzi on 28.02.18.
@@ -9,9 +8,8 @@
 import XCTest
 import btcutil
 
-class addressTests: XCTestCase {
+class AddressTests: XCTestCase {
     func testAddressTypes() {
-        
         let tests: [(String, Address.AddressType)] = [
             ("17VZNX1SN5NtKa8UQFxwQbFeFc3iqRYhem", .pubkeyHash),
             ("3EktnHQD7RiAE6uzMj2ZifT9YgRrkSgzQX", .scriptHash),

@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		22259EE17779D30C4E4B4DD8 /* Pods_btcutil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC87B3D89A5089E24DB7BBD /* Pods_btcutil.framework */; };
 		724AD5B0601402C211A00854 /* Pods_btcutilTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F687F0BE3EE613B856BF238 /* Pods_btcutilTests.framework */; };
-		A035FC9C2045EC47001DB028 /* base58Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035FC9B2045EC47001DB028 /* base58Tests.swift */; };
-		A035FC9E2046A1C0001DB028 /* base58CheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035FC9D2046A1C0001DB028 /* base58CheckTests.swift */; };
+		A035FC9C2045EC47001DB028 /* Base58Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035FC9B2045EC47001DB028 /* Base58Tests.swift */; };
+		A035FC9E2046A1C0001DB028 /* Base58CheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035FC9D2046A1C0001DB028 /* Base58CheckTests.swift */; };
 		A035FCA02046ADDF001DB028 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035FC9F2046ADDF001DB028 /* Address.swift */; };
-		A035FCA42046B095001DB028 /* addressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035FCA32046B095001DB028 /* addressTests.swift */; };
+		A035FCA42046B095001DB028 /* AddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035FCA32046B095001DB028 /* AddressTests.swift */; };
+		A035FCA62046B5F6001DB028 /* Bech32.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035FCA52046B5F6001DB028 /* Bech32.swift */; };
+		A035FCA82046C54D001DB028 /* Bech32Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035FCA72046C54D001DB028 /* Bech32Tests.swift */; };
 		A0DF60A02045B085002B8038 /* btcutil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DF60962045B084002B8038 /* btcutil.framework */; };
 		A0DF60A72045B085002B8038 /* btcutil.h in Headers */ = {isa = PBXBuildFile; fileRef = A0DF60992045B084002B8038 /* btcutil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0DF60E62045BAFA002B8038 /* cryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF60E52045BAFA002B8038 /* cryptoTests.swift */; };
+		A0DF60E62045BAFA002B8038 /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF60E52045BAFA002B8038 /* CryptoTests.swift */; };
 		A0DF60E82045BE5B002B8038 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF60E72045BE5B002B8038 /* String.swift */; };
 		A0DF60EA2045BE66002B8038 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF60E92045BE66002B8038 /* Data.swift */; };
-		A0DF60EC2045C0F4002B8038 /* base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF60EB2045C0F4002B8038 /* base58.swift */; };
+		A0DF60EC2045C0F4002B8038 /* Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF60EB2045C0F4002B8038 /* Base58.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +37,12 @@
 		0EC87B3D89A5089E24DB7BBD /* Pods_btcutil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btcutil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		503EC8814C0441BF4B1CFEDF /* Pods-btcutil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcutil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-btcutil/Pods-btcutil.debug.xcconfig"; sourceTree = "<group>"; };
 		8F687F0BE3EE613B856BF238 /* Pods_btcutilTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btcutilTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A035FC9B2045EC47001DB028 /* base58Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = base58Tests.swift; sourceTree = "<group>"; };
-		A035FC9D2046A1C0001DB028 /* base58CheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = base58CheckTests.swift; sourceTree = "<group>"; };
+		A035FC9B2045EC47001DB028 /* Base58Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base58Tests.swift; sourceTree = "<group>"; };
+		A035FC9D2046A1C0001DB028 /* Base58CheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base58CheckTests.swift; sourceTree = "<group>"; };
 		A035FC9F2046ADDF001DB028 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		A035FCA32046B095001DB028 /* addressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressTests.swift; sourceTree = "<group>"; };
+		A035FCA32046B095001DB028 /* AddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTests.swift; sourceTree = "<group>"; };
+		A035FCA52046B5F6001DB028 /* Bech32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bech32.swift; sourceTree = "<group>"; };
+		A035FCA72046C54D001DB028 /* Bech32Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bech32Tests.swift; sourceTree = "<group>"; };
 		A0DF60962045B084002B8038 /* btcutil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = btcutil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DF60992045B084002B8038 /* btcutil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = btcutil.h; sourceTree = "<group>"; };
 		A0DF609A2045B084002B8038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,10 +50,10 @@
 		A0DF60A62045B085002B8038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DF60B92045B250002B8038 /* libapple_crypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libapple_crypto.tbd; path = usr/lib/libapple_crypto.tbd; sourceTree = SDKROOT; };
 		A0DF60DE2045B5E0002B8038 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		A0DF60E52045BAFA002B8038 /* cryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoTests.swift; sourceTree = "<group>"; };
+		A0DF60E52045BAFA002B8038 /* CryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTests.swift; sourceTree = "<group>"; };
 		A0DF60E72045BE5B002B8038 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		A0DF60E92045BE66002B8038 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		A0DF60EB2045C0F4002B8038 /* base58.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = base58.swift; sourceTree = "<group>"; };
+		A0DF60EB2045C0F4002B8038 /* Base58.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base58.swift; sourceTree = "<group>"; };
 		B1A7FBEFC559BE3F2458D450 /* Pods-btcutilTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcutilTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-btcutilTests/Pods-btcutilTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3DD0EBA41860583E8BC3736 /* Pods-btcutil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcutil.release.xcconfig"; path = "Pods/Target Support Files/Pods-btcutil/Pods-btcutil.release.xcconfig"; sourceTree = "<group>"; };
 		F383EFE5D148C8B4E8D7E0EF /* Pods-btcutilTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcutilTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-btcutilTests/Pods-btcutilTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,7 +118,8 @@
 				A0DF60992045B084002B8038 /* btcutil.h */,
 				A0DF609A2045B084002B8038 /* Info.plist */,
 				A035FC9F2046ADDF001DB028 /* Address.swift */,
-				A0DF60EB2045C0F4002B8038 /* base58.swift */,
+				A0DF60EB2045C0F4002B8038 /* Base58.swift */,
+				A035FCA52046B5F6001DB028 /* Bech32.swift */,
 				A0DF60E92045BE66002B8038 /* Data.swift */,
 				A0DF60E72045BE5B002B8038 /* String.swift */,
 			);
@@ -125,10 +130,11 @@
 			isa = PBXGroup;
 			children = (
 				A0DF60A62045B085002B8038 /* Info.plist */,
-				A035FCA32046B095001DB028 /* addressTests.swift */,
-				A035FC9D2046A1C0001DB028 /* base58CheckTests.swift */,
-				A035FC9B2045EC47001DB028 /* base58Tests.swift */,
-				A0DF60E52045BAFA002B8038 /* cryptoTests.swift */,
+				A035FCA32046B095001DB028 /* AddressTests.swift */,
+				A035FC9D2046A1C0001DB028 /* Base58CheckTests.swift */,
+				A035FC9B2045EC47001DB028 /* Base58Tests.swift */,
+				A035FCA72046C54D001DB028 /* Bech32Tests.swift */,
+				A0DF60E52045BAFA002B8038 /* CryptoTests.swift */,
 			);
 			path = btcutilTests;
 			sourceTree = "<group>";
@@ -359,7 +365,8 @@
 				A0DF60E82045BE5B002B8038 /* String.swift in Sources */,
 				A0DF60EA2045BE66002B8038 /* Data.swift in Sources */,
 				A035FCA02046ADDF001DB028 /* Address.swift in Sources */,
-				A0DF60EC2045C0F4002B8038 /* base58.swift in Sources */,
+				A035FCA62046B5F6001DB028 /* Bech32.swift in Sources */,
+				A0DF60EC2045C0F4002B8038 /* Base58.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,10 +374,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0DF60E62045BAFA002B8038 /* cryptoTests.swift in Sources */,
-				A035FC9C2045EC47001DB028 /* base58Tests.swift in Sources */,
-				A035FCA42046B095001DB028 /* addressTests.swift in Sources */,
-				A035FC9E2046A1C0001DB028 /* base58CheckTests.swift in Sources */,
+				A0DF60E62045BAFA002B8038 /* CryptoTests.swift in Sources */,
+				A035FC9C2045EC47001DB028 /* Base58Tests.swift in Sources */,
+				A035FCA42046B095001DB028 /* AddressTests.swift in Sources */,
+				A035FC9E2046A1C0001DB028 /* Base58CheckTests.swift in Sources */,
+				A035FCA82046C54D001DB028 /* Bech32Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

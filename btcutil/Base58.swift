@@ -1,5 +1,4 @@
 //
-//  base58.swift
 //  btcutil
 //
 //  Created by Justus Kandzi on 27.02.18.
@@ -25,7 +24,7 @@ enum Base58 {
         }
     
         let leadingZeros = input.prefix(while: { $0 == "1" }).count
-        let prefix = Data(bytes: Array<UInt8>(repeating: 0, count: leadingZeros))
+        let prefix = Data(Array<UInt8>(repeating: 0, count: leadingZeros))
 
         return prefix + answer.serialize()
     }

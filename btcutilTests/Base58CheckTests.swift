@@ -1,5 +1,4 @@
 //
-//  base58CheckTests.swift
 //  btcutilTests
 //
 //  Created by Justus Kandzi on 28.02.18.
@@ -9,9 +8,8 @@
 import XCTest
 @testable import btcutil
 
-class base58CheckTests: XCTestCase {
+class Base58CheckTests: XCTestCase {
     func testValidBase58Check() {
-        
         let decodeTests: [(String, (Int, String)?)] = [
             ("3MNQE1X", (20, "")),
             ("B2Kr6dBE", (20, " ")),
@@ -39,7 +37,6 @@ class base58CheckTests: XCTestCase {
     }
     
     func testInvalidBase58Check() {
-        
         let decodeTests: [String] = [
             "1HbfPXavLn1fyB8dAf4Nv6whphZ7P4NsYQ",
             "3MNQE1Y",

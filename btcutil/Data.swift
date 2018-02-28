@@ -1,5 +1,4 @@
 //
-//  Data.swift
 //  btcutil
 //
 //  Created by Justus Kandzi on 27.02.18.
@@ -20,7 +19,7 @@ extension Data {
         let digestLength = Int(CC_SHA256_DIGEST_LENGTH)
         var hash = [UInt8](repeating: 0, count: digestLength)
         CC_SHA256(bytes, UInt32(count), &hash)
-        return Data(bytes: hash)
+        return Data(hash)
     }
     
     func hexString() -> String {
